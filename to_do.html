@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="to_do.css" />
+</head>
+<body>
+    <h1 class="title"><u>To-Do List</u></h1>
+    <div class="main-container">
+    <div class="left-panel">
+        <h1><u>Create task</u></h1>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Enter task">
+            <input type="text" id="timeInput" placeholder="Enter time (HH:MM)">
+            <button onclick="addToList()">Add Task</button>
+        </div>
+
+        <div class="controls">
+            <button onclick="clearAllTasks()">Clear All Tasks</button>
+        </div>
+
+        <div id="errorMessage" class="error">Enter valid task and time in HH:MM (24hr) format</div>
+    </div>
+    <div class="divider"></div>
+    <div class="right-panel">
+        <h1 ><u>Task List</u></h1>
+        <div id="taskGrid" class="task-grid"></div>
+    </div>
+</div>
+
+    <script src="to_do.js"></script>
+</body>
+</html>

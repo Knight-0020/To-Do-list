@@ -1,0 +1,119 @@
+body {
+    background-color: #0F0F0F;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #EAEAEA;
+}
+
+.main-container {
+    display: flex;
+    padding: 20px;
+}
+
+.left-panel {
+    width: 30%;
+    padding-right: 20px;
+}
+
+.right-panel {
+    width: 70%;
+}
+
+.input-container input[type="text"] {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 90%;
+    background-color: #1A1A1D;
+    border: 1px solid #39FF14;
+    color: #EAEAEA;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 5px 0;
+    background-color: #39FF14;
+    color: #0F0F0F;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #00FFFF;
+    color: black;
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+.error {
+    color: #FF4C4C;
+    display: none;
+}
+
+.task-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.task-card {
+    background-color: #1A1A1D;
+    border: 1px solid #39FF14;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    position: relative;
+    color: #EAEAEA;
+}
+
+.task-card.overdue .task-name,
+.task-card.overdue .task-time {
+    color: #FF3131;
+}
+
+.task-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.task-time {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.task-card button {
+    margin-right: 5px;
+    font-size: 12px;
+    padding: 5px 8px;
+    background-color: #39FF14;
+    border: none;
+    border-radius: 4px;
+    color: #0F0F0F;
+    font-weight: bold;
+}
+
+.task-card button:hover {
+    background-color: #00FFFF;
+    color: black;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+h1{
+    text-align: center;
+}
+.title{
+    text-align: center;
+    font-size:xxx-large;
+}
+.divider {
+    width: 2px;
+    background-color: #39FF14;
+    margin: 0 10px;
+}
